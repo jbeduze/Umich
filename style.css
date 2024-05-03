@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
+
+html, body, [class*="css"] {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+
+
+
+/* Styling the tab headers */
+.tab-header {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ccc; /* Grey border */
+    padding: 10px; /* Padding around the text */
+}
+
+.tab-header.active {
+    background-color: white; /* White background for active tab */
+    border-bottom: none; /* No bottom border for active tab */
+}
+
+.tab-header:hover {
+    background-color: #12048b; /* Slightly darker grey on hover */
+}
