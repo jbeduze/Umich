@@ -1,28 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap'); 
 
-html, body, [class*="css"] {
-    font-family: 'Roboto', sans-serif; 
+html, body,
+     {
+    font-family: 'Jaro', sans-serif; 
     font-size: 18px;
     font-weight: 500;
-    color: #ffffff;
+    color: #cc2a2a;
 }
 
 
-
-
-
-/* Styling the tab headers */
-.tab-header {
-    background-color: #f9f9f9; /* Light grey background */
-    border: 1px solid #ccc; /* Grey border */
-    padding: 10px; /* Padding around the text */
-}
-
-.tab-header.active {
-    background-color: white; /* White background for active tab */
-    border-bottom: none; /* No bottom border for active tab */
-}
-
-.tab-header:hover {
-    background-color: #12048b; /* Slightly darker grey on hover */
+div[data-testid="stMarkdownContainer"] {
+    font-family: 'Jaro', sans-serif; 
+    font-size: 18px;
+    font-weight: 500;
+    color: #11ca8c;
 }

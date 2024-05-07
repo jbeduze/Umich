@@ -1,8 +1,11 @@
+
+
 import streamlit as st
 import cv2
 import tempfile
 import numpy as np
 import os
+from streamlit_extras.stylable_container import stylable_container
 
 # Add more widgets and functionality specific to the Personal Stats page
 
@@ -17,6 +20,7 @@ def show():
             frame = None  # None indicates an invalid frame
         return frame
     st.title('Video Analysis')
+
 
     video_file_buffer = st.file_uploader("Upload a Video", type=["mp4", "mov", "avi", "mkv"])
     if video_file_buffer is not None:
@@ -36,8 +40,8 @@ def show():
             st.session_state.frame_range,
             key='frame_range'
         )
-
-        # Display selected frame range and surrounding frames
+#insert bad boi
+            # Display selected frame range and surrounding frames
         col1, col2, col3, col4 = st.columns(4)
         frames_to_display = [
             (frame_range[0] - 1, "Frame Before Start"),
@@ -79,8 +83,9 @@ def show():
 
             # Download link
             with open(output_file_path, 'rb') as f:
-                st.download_button('Download Video Segment', f, file_name='video_segment.mp4')
+                st.download_button('Confirm download', f, file_name='video_segment.mp4')
 
             os.remove(output_file_path)  # Clean up temporary file
+
     else:
         st.text("Please upload a video file to proceed.")

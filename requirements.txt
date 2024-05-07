@@ -2,3 +2,7 @@ streamlit
 streamlit_extras
 opencv-python-headless
 openai
+matplotlib
+seaborn
+numpy
+pandas
